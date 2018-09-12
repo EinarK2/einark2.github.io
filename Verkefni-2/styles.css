@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    border: 3px solid green;
+}
+.box {
+    border: 6px solid red;
+    padding: 2em;
+    margin-top: 1em;
+}
+.box2 {
+    border: 5px dashed blue;
+    padding: 1em;
+}
+li {
+    border: 3px dashed green;
+    padding: 1em;
+    margin: 1em;
+}
+.inline li {
+    display: inline;
+    border: 3px dashed blue;
+    color: red
+}
+.inlineBlock li {
+    display: inline-block;
+}
+.box-1-3 {
+    width:33.33%;
+    border: 1px solid;
+    padding: 1em;
+}
+.box-1-2 {
+    width: 50%;
+    border: 1px solid;
+    padding: 1em;
+}
+.row div{
+    float: left;
+}
