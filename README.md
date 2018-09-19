@@ -5,9 +5,9 @@
 * [Verkefnalýsing 1 - HTML & CSS](Verkefni-1/)
 * [Verkefnalýsing 2 - Box módelið](Verkefni-2/)
 * [Verkefnalýsing 3 - Skipulag](Verkefni-3/)
-* [Verkefnalýsing 4 - Uppsetning](Verkefni-4/README.md)
-* [Verkefnalýsing 5 - Myndvinnsla](Verkefni-5/README.md)
-* [Verkefnalýsing 6 - Sveigjanleg vefhönnun](Verkefni-6/README.md) 
+* [Verkefnalýsing 4 - Uppsetning](Verkefni-4/)
+* [Verkefnalýsing 5 - Myndvinnsla](Verkefni-5/)
+* [Verkefnalýsing 6 - Sveigjanleg vefhönnun](Verkefni-6/) 
 
 Öll verkefni sem lögð eru fyrir í áfanganum VEFÞ1VG **á að skila hér** í geymsluna (_Repository_) í viðeigandi verkefnamöppu. 
 
