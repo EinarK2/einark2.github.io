@@ -1,11 +1,11 @@
 html {
-    background-color: beige;
+    background-image: none;
 }
 body {
     max-width: 60em;
     margin: 0 auto;
-    border: 3px solid red;
-    font-family: 'Open Sans', sans-serif;
+    border: 3px solid rgb(182, 7, 7);
+    font-family:  'K2D', sans-serif;
     line-height: 1.5;
     display: grid;
     grid-template-columns: 1fr;
@@ -16,7 +16,7 @@ body {
         "footer"
 }
 header {
-    border: 2px solid green;
+    background-image: linear-gradient(rgb(255, 196, 0), rgb(255, 255, 0));
     text-align: center;
     grid-area: header;
 }
@@ -24,12 +24,13 @@ header h1 {
     margin: 0;
 }
 nav {
-    border: 2px solid yellow;
+    background-image: linear-gradient(rgb(182, 21, 21), rgb(87, 5, 5));
 }
 main {
-    border: 3px solid blue;
+    
 }
 footer {
+    background-image: linear-gradient(rgb(182, 21, 21), rgb(87, 5, 5));
     grid-area: footer;
     display: flex;
     flex-flow: row;
@@ -60,12 +61,15 @@ footer p {
 /*dálkar í content i guess*/
 .midja {
     grid-area: midja;
+    background-color: beige;
 }
 .vinstri {
     grid-area: vinstri;
+    background-color: rgb(223, 223, 170);
 }
 .haegri {
     grid-area: haegri;
+    background-color: rgb(223, 223, 170);
 }
 
 p, h4 {
@@ -80,15 +84,16 @@ p {
 
 .topmenu a {
     text-decoration: none;
-    color: blue;
+    color: white;
     padding: 0.5em;
 }
 .topmenu a:visited {
-    color: darkblue;
+    color: rgb(231, 229, 229);
 }
 .topmenu a:hover, .topmenu a:active {
-    background-color: lightyellow;
-    color:black;
+    background-color: none;
+    text-decoration-line: underline
+    
 }
 .topmenu a.virkur {
     color: red;
