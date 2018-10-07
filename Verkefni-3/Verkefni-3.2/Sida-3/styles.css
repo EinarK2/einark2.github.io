@@ -4,7 +4,8 @@ html {
 body {
     max-width: 70em;
     margin: 0 auto;
-    font-family:  'K2D', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
     line-height: 1.5;
     display: grid;
     grid-template-columns: 1fr;
@@ -15,7 +16,7 @@ body {
         "footer"
 }
 header {
-    background-image: linear-gradient(rgb(255, 174, 0), rgb(240, 225, 20));
+    background-color: #581845;
     text-align: center;
     grid-area: header;
 }
@@ -23,13 +24,13 @@ header h1 {
     margin: 0;
 }
 nav {
-    background-image: linear-gradient(rgb(182, 21, 21), rgb(87, 5, 5));
+    background-color: #C70039;
 }
 main {
     
 }
 footer {
-    background-image: linear-gradient(rgb(182, 21, 21), rgb(87, 5, 5));
+    background-color: #C70039;
     grid-area: footer;
     display: flex;
     flex-flow: row;
@@ -54,21 +55,29 @@ footer p {
 .content {
     display: grid;
     grid-gap: 0;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: "vinstri midja haegri";
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: "vinstri haegri midja meira more";
 }
-/*dálkar í content i guess*/
+/*dálkar í content*/
 .midja {
     grid-area: midja;
-    background-color: beige;
+    background-color: #FF5733;
 }
 .vinstri {
     grid-area: vinstri;
-    background-color: rgb(223, 223, 170);
+    background-color: #FFC300;
 }
 .haegri {
     grid-area: haegri;
-    background-color: rgb(223, 223, 170);
+    background-color: #FFC300;
+}
+.meira {
+    grid-area: meira;
+    background-color:#FF5733; 
+}
+.more {
+    grid-area: more;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/ICA_flag.svg/2000px-ICA_flag.svg.png)
 }
 
 p, h4 {
@@ -98,7 +107,11 @@ p {
     color: red;
     background-color: bisque;
 }
-
+.title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 2.5em;
+}
 
 .test{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
