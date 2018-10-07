@@ -2,7 +2,7 @@ html {
     background-image: none;
 }
 body {
-    max-width: 70em;
+    max-width: 60em;
     margin: 0 auto;
     font-family:  'K2D', sans-serif;
     line-height: 1.5;
@@ -122,5 +122,4 @@ p {
         100%{color: blue;}
         100%{color: orange;}
 }	
-
 
