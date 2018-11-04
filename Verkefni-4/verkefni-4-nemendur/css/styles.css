@@ -1,6 +1,6 @@
 * {box-sizing: border-box}
 body {
-    background-color: blue;
+    background-color: #1E90FF;
     background: linear-gradient();
     color: black;
     font: 400 1em/1.5 "Open Sans", sans-serif; /*samsett skipun: weight height*/
@@ -22,10 +22,9 @@ body {
 .container {
     max-width: 60em;
     margin: 0 auto;
-    padding-top: 2em;
 }
 .beige, .beige2 {
-    background-image: linear-gradient(to bottom, rgb(247, 216, 115), rgb(250, 250, 209));
+    background-image: linear-gradient(to bottom, beige,#FFFFE0);
     padding: 1em;
 }
 .beige2 {
@@ -44,6 +43,8 @@ header h1 {
     font-size: 3em;
     text-transform: uppercase;
     margin: 2em 0 1em 0; /*Top right bottom left*/
+    padding: .2em;
+    font-family: 'Ubuntu', sans-serif;
 }
 .topnav {
     margin-top: 6em;
@@ -53,25 +54,30 @@ header h1 {
 .topnav a {
     display: block;
     color: #ffff;
-    text-transform: uppercase;
     text-decoration: none;
-    padding: 0 0 0 3em;
+    padding: 0 0 0 0.2em;
+}
+.topnav :hover {
+    text-decoration: underline;
 }
 .verkefni {
-    color: #fff;
+    color: wheat;
     display: flex;
     text-transform: uppercase;
     justify-content: flex-end;
     font-size: 1em;
+    padding: 1em;
 }
 blockquote {
-    background-color: rgba(red, rgb(137, 43, 192), blue, alpha);
-    padding: 1em;
+    background-color: #fff;
+    opacity: 0.5;
+    padding: 10px;
 }
 
 
 footer {
     color: #ffff;
+    padding: 1em;
 }
 footer a {
     color: #ffff;
@@ -84,16 +90,25 @@ footer li {
     list-style-type: none;
     padding-bottom: .25em;
 }
+footer a:hover {
+    text-decoration: underline;
+}
 .innermenu {
     display: flex;
-    background-color: blue;
+    background-color: #1E90FF;
     justify-content: center;
+    border-radius: 1em;
 }
 .innermenu a {
     color: #ffff;
     text-decoration: none;
     padding: .4em 1.2em;
     border-right: 1px solid #fff;
+}
+.innermenu :hover {
+    text-decoration: underline;
+    background-color: #fff;
+    color: #1E90FF; 
 }
 .innermenu a:last-child {
     border: none;
@@ -110,8 +125,18 @@ footer li {
     right: 2em;
     width: 1.5em;
     padding: 0 .2em;
+    text-decoration: none;
 } 
 .topbutt:hover, .topbutt:active {
     background-color: rgb(78, 78, 216);
     color: #ffff;
 }
+.copy {
+    padding: 1em;
+    color: #fff;
+    
+}
+dt {
+    color: wheat;
+}
+
