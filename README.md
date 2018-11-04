@@ -5,7 +5,7 @@
 * [Verkefnalýsing 1 - HTML & CSS](Verkefni-1/)
 * [Verkefnalýsing 2 - Box módelið](Verkefni-2/)
 * [Verkefnalýsing 3 - Skipulag](Verkefni-3/Verkefni-3.1)
-* [Verkefnalýsing 4 - Uppsetning](Verkefni-4/)
+* [Verkefnalýsing 4 - Uppsetning](Verkefni-4/verkefni-4-nemendur)
 * [Verkefnalýsing 5 - Myndvinnsla](Verkefni-5/)
 * [Verkefnalýsing 6 - Sveigjanleg vefhönnun](Verkefni-6/) 
 
