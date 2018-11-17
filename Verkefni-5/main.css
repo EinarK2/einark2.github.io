@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    /*display: flex;
+    flex-flow: column;*/
+
+    background: #fff url(https://wallpapercave.com/wp/5Vf1fcM.jpg) -100px bottom fixed no-repeat;
+    color: #666;
+    font: 400 1em/1.5 "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.beigebg {
+    background: linear-gradient(to top, beige, white);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2,
+h3, h4, {
+    color: darkcyan;
+    font-weight: 300;
+}
+
+col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    
+}
+h-col-3 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
