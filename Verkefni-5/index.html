@@ -1,15 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="is">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <title>Verkefni 5</title>
 </head>
 <body>
-    <h1>wow</h1>
-    <a>many div img fer í figure (figcaption inní figure) og section og container thing </a>
+    <header class="container col-2">
+        <section class="left">
+            <img src="https://nam.inna.is/api/Attachment/DownloadAttachment/1310272/9?student=1" height="100px" width="150px">
+            <h1 class="title">Vefsíðan mín</h1>
+        </section>
+        <section class="right">
+            <nav class="topnav">
+                <a>VEFÞ1VG05 |</a>
+                <a href="#1" title="Um mig ">Um mig | </a>
+                <a href="#2" title="Áhugamál ">Áhugamál | </a>
+                <a href="#3" title="Verkefni ">Verkefni</a> 
+            </nav>
+            <div class="name"><p>Einar Karl Pétursson</p></div>
+        </section>
+    </header>
+
+    <main class="um_mig container" id="1">
+        <div class="darkblue">
+            <section class="texti">
+                <h1>Um mig</h1>
+                <p>Ég heiti Einar Karl Pétursson og ég er nemandi á tölvunraut Tækniskólans. Ég er fæddur 26. september 2002 og bý í kópavoginum</p>
+                <p>Menntun:</p>
+                <ul>
+                    <li>Álfhólsskóli 2008-2018</li>
+                    <li>Tækniskólinn, tölvubraut 2018-núna</li>
+                </ul>
+            </section>
+            <section class="myndir">
+                <img src="égeh.png" height="300px" width="250px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3012.3500627909557!2d-21.92644571792261!3d64.14144123332784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sis!2sis!4v1542554733749" width="250" height="248.5" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+        </div>
+    </main>
+    <section class="container" id="2">
+        <div class="darkblue">
+            <section class="texti">
+                <h1>Áhugamál</h1>
+                <p>Megin áhugmálin mín eru tölvuleikir, tónlist og kvikmyndir.</p>
+                <p>Einmitt núna myndi ég segja að tónlist er megin áhugamál mitt. Ég safna vínyl plötum og hef mjög gaman af því. Ég er einnig að reyna að læra á gítar og píanó sem ég hef gaman af. En þegar það kemur að hvernig tónlist ég hlusta á þá er margt til að ræða um. Ég hef gaman af frekar mikið af tónlist hvort sem það er Hip hop, experimental hiphop, alt rock, prog rock, pshycadelia, indie rock, electronic, house eða synthpop. Til að nefna nokkur.  </p>
+                <p>Ég hef einnig mikinn áhuga á tölvuleikjum. Ég hef gaman af allskonar tölvuleikjum og það er svoldið erfitt að tala um alla en þeir eru skemmtilegir.</p>
+                <p>Svo hef ég mikinn áhuga á kvikmyndum og einnig kvikmyndagerð. Ég er að líka að vinna í smá stuttmynd einmitt núna. En uppáhalds kvikmyndir mínar myndu vera Fight Club, 2001 A Space Odessey, Blade Runner 2049 og Empire Strikes Back.</p>
+            </section>
+            <section class="Myndir">
+                <img src="topsters2.jpg" height="325" width="437">
+                <iframe width="425" height="275" src="https://www.youtube.com/embed/VRrfQZLrVGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <audio controls>
+                    <source src="102 - Paranoid Android (Remastered).mp3" type="audio/mpeg">
+                </audio>
+            </section>
+        </div>
+    </section>
+    <section class="verkefni" id="3">
+        <h2><a href="https://einark2.github.io/">Valmynd</a></h2>
+        <section class="verkefni_tenglar">
+            <div>
+                <p>Skilaverkefni 1:</p>
+                <ul>
+                    <li><a href="../Verkefni-1/index.html">Aðal</a></li> 
+                    <li><a href="../Verkefni-1/sida2.html">Hlekk síða</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Skilaverkefni 2:</p>
+                <ul>
+                    <li><a href="../Verkefni-2/index.html">Flexbox Röðun</a></li> 
+                    <li><a href="../Verkefni-2/verkefni-24-nemar/order.html">Box-model</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Skilaverkefni 3:</p>
+                <ul>
+                    <li><a href="../Verkefni-3/Verkefni-3.1/index.html">Font og grid</a></li> 
+                    <li><a href="../Verkefni-3/Verkefni-3.2/index.html">Leikið með layout</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Skilaverkefni 4:</p>
+                <ul>
+                    <li><a href="../Verkefni-4/verkefni-4-nemendur/index.html">Bakgrunnslitir</a></li> 
+                    <li><a href="../Verkefni-4/verkefni-4-nemendur/innerlinks.html">Efnisyfirlit og Tenglar</a></li>
+                    <li><a href="../Verkefni-4/verkefni-4-nemendur/greinagerd.html">Greinargerð</a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <footer><p class="copy">&copy; 2018 EKP</p></footer>
 </body>
 </html>

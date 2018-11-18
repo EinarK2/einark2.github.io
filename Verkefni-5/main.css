@@ -5,23 +5,56 @@ body {
     /*display: flex;
     flex-flow: column;*/
 
-    background: #fff url(https://wallpapercave.com/wp/5Vf1fcM.jpg) -100px bottom fixed no-repeat;
-    color: #666;
+    background: #3500d3 -100px bottom fixed no-repeat;
+    color: #FFF;
     font: 400 1em/1.5 "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
-.beigebg {
-    background: linear-gradient(to top, beige, white);
+header {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+}
+.darkblue {
+    background: linear-gradient(to top, #0C0032, #190061);
+    padding: 1em;
 }
 img {
     max-width: 100%;
     height: auto;
+    float: initial;
 }
-h1, h2,
-h3, h4, {
-    color: darkcyan;
-    font-weight: 300;
+.container {
+    max-width: 60em;
+    margin: 0 auto;
 }
-
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left {
+    text-align: center;
+    display: flex;
+}
+.um_mig {
+    padding-top: 0em;
+    padding-bottom: 1em;
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "left right";
+}
+.texti {
+    grid-area: left;
+}
+.myndir {
+    grid-area: right;
+    padding: 10px;
+    padding-top: 30px;
+    text-align: right;
+}
 col-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -37,3 +70,66 @@ h-col-3 {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+.topnav {
+    margin-top: 5em;
+    display: flex;
+    justify-content: flex-end;
+}
+.topnav a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0 0 0 0.2em;
+}
+.topnav :hover {
+    text-decoration: underline;
+}
+.name {
+    text-align: right;
+}
+.title {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.7em;
+    padding: 1em;
+}
+.map {
+
+}
+a {
+    text-decoration: none;
+}
+.verkefni {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.verkefni>h2 {
+    color: #FFF;
+    text-align: center;
+}
+.verkefni>h2 :visited {
+    color: rgb(190, 188, 188);
+}
+.verkefni_tenglar {
+    display: flex;
+    justify-content: space-between;
+}
+.verkefni_tenglar a {
+    color: #FFF;
+}
+.verkefni_tenglar>div {
+    padding-right: 1em;
+}
+.verkefni_tenglar a:visited {
+    color: rgb(190, 188, 188);
+}
+.verkefni_tenglar a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    font-size: 1em;
+}
+
+/*<h1>wow</h1>
+    <a>many div img fer í figure (figcaption inní figure) og section og container thing </a>*/
