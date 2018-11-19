@@ -110,3 +110,12 @@ footer {
     text-align: center;
     font-size: 1em;
 }
+.svg {
+    position: relative; 
+    height: 30%; 
+    width: 44%; 
+    padding: 1em;
+    left: 0; 
+    top: 0;
+    padding-top: 15%;
+}
