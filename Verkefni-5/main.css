@@ -2,9 +2,6 @@
     box-sizing: border-box;
 }
 body {
-    /*display: flex;
-    flex-flow: column;*/
-
     background: #3500d3 -100px bottom fixed no-repeat;
     color: #FFF;
     font: 400 1em/1.5 "Open Sans", "Helvetica Neue", Arial, sans-serif;
@@ -53,22 +50,7 @@ header {
     grid-area: right;
     padding: 10px;
     padding-top: 30px;
-    text-align: right;
-}
-col-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
-}
-col-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
-    
-}
-h-col-3 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    text-align: center;
 }
 .topnav {
     margin-top: 5em;
@@ -86,6 +68,7 @@ h-col-3 {
 }
 .name {
     text-align: right;
+    font-size: 1.3em; /*Langaði að gera nafnið pinku stærra*/
 }
 .title {
     display: flex;
@@ -93,11 +76,8 @@ h-col-3 {
     font-size: 2.7em;
     padding: 1em;
 }
-.map {
-
-}
 a {
-    text-decoration: none;
+    text-decoration: none;/*svo linkarnir eru ekki með underline*/
 }
 .verkefni {
     max-width: 960px;
@@ -115,7 +95,7 @@ a {
     justify-content: space-between;
 }
 .verkefni_tenglar a {
-    color: #FFF;
+    color: #FFF;/*svo linkarnir eru ekki bláir*/
 }
 .verkefni_tenglar>div {
     padding-right: 1em;
@@ -130,6 +110,3 @@ footer {
     text-align: center;
     font-size: 1em;
 }
-
-/*<h1>wow</h1>
-    <a>many div img fer í figure (figcaption inní figure) og section og container thing </a>*/
