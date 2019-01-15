@@ -8,7 +8,7 @@
 2. Hvað gera eftirfarandi Git skipanir?
     git clone - afrita geymslu (_repository_)
     git status - kannar stöðuna á git-inu
-    git diff - skoðar öll conflict skjalsins
+    git diff - skoðar öll 'merge conflict' skjalsins
 3. Hvað gera eftirfarandi Git skipanir saman? Hvaða gagn er að þeirri aðgerð?
     git log -
     git checkout -
