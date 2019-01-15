@@ -16,5 +16,6 @@
 4. Hvað er útgáfustýring (Version Control)? 
     - Útgáfustýring er kerfi sem man allar breytingar á skjölum eða skjali og er notað til að getað skoðað allar þessar breytingar 
 5. Hverjir eru helstu kostir við að nota GIT?
+    - Eitt sem er gott við að nota git er að maður getur skoðað öll commit fyrir reference. Það er líka alltaf hægt að fara til baka ef maður gerir eitthvað vitlaust. 
 6. Hversu oft telur þú að eigi að gera færslur (commit) í verkefni?
 7. Hvað er átt við með “Working Directory”?” og “Staging Area” í GIT?
