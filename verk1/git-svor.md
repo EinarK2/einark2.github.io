@@ -13,7 +13,8 @@
     git log - sýnir allar breytingar og commit skjalsins
     git checkout - notað til að breyta um branch eða búa til ný
     git branch - sýnir öll branch í skjalinu og það branch sem maður er í
-4. Hvað er útgáfustýring (Version Control)?
+4. Hvað er útgáfustýring (Version Control)? 
+    - Útgáfustýring er kerfi sem man allar breytingar á skjölum eða skjali og er notað til að getað skoðað allar þessar breytingar 
 5. Hverjir eru helstu kostir við að nota GIT?
 6. Hversu oft telur þú að eigi að gera færslur (commit) í verkefni?
 7. Hvað er átt við með “Working Directory”?” og “Staging Area” í GIT?
