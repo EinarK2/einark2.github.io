@@ -18,4 +18,5 @@
 5. Hverjir eru helstu kostir við að nota GIT?
     - Eitt sem er gott við að nota git er að maður getur skoðað öll commit fyrir reference. Það er líka alltaf hægt að fara til baka ef maður gerir eitthvað vitlaust. 
 6. Hversu oft telur þú að eigi að gera færslur (commit) í verkefni?
+    - Ég myndi segja hverjar 5 - 10 mínútur ef þaður er að gera eitthvað mikilvægt. Annars ekki eins oft. Eða skipta því í liði eins og hér.
 7. Hvað er átt við með “Working Directory”?” og “Staging Area” í GIT?
