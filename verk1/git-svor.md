@@ -7,8 +7,8 @@
     mkdir - bý til möppu
 2. Hvað gera eftirfarandi Git skipanir?
     git clone - afrita geymslu (_repository_)
-    git status - 
-    git diff - 
+    git status - kannar stöðuna á git-inu
+    git diff - skoðar öll conflict skjalsins
 3. Hvað gera eftirfarandi Git skipanir saman? Hvaða gagn er að þeirri aðgerð?
     git log -
     git checkout -
