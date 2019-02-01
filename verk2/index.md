@@ -8,4 +8,4 @@ title: Verkefni 2. Jekyll vefsíða
 
 ## {{ "Þetta er nýja vefsíðan mín" | upcase }}
 
-### {{ "aggi bara?" | capitalize }}
+#### {{ "ég held það" | capitalize }}
