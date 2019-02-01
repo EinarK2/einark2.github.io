@@ -1,4 +1,4 @@
-- name: Home
-  link: /
-- name: About
-  link: /about.html
+- name: Forsíða
+  link: /_site/verk2/index.html
+- name: Um mig
+  link: /_site/verk2/about.html
