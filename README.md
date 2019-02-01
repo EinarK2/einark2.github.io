@@ -1,4 +1,4 @@
-# VEFÞ1VG-H1-2018H
+# VEFÞ2VH05BU V2019
 
 ### Verkefni
 

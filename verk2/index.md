@@ -1,9 +1,11 @@
 ---
 layout: default
-title: verkefni 2. Jekyll vefsíða
+title: Verkefni 2. Jekyll vefsíða
 
 ---
 
 # Halló heimur
 
 ## {{ "Þetta er nýja vefsíðan mín" | upcase }}
+
+### {{ "aggi bara?" | capitalize }}

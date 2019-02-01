@@ -4,4 +4,4 @@ title: Um mig
 ---
 # Um Mig
 
-Tis i, einar 
+Ég heiti Einar Karl og ég er á tölvubrautinni í tækniskólanum 
