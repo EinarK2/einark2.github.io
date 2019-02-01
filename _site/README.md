@@ -4,7 +4,7 @@
 
 * [Verkefni 1-6 (Haust 2018)](2018-vef1/)
 * [Verkefni 1](verk1/)
-* [Verkefni 2](_site/verk2/index.html/)
+* [Verkefni 2](verk2/)
 * [Verkefni 3]()
 * [Verkefni 4]()
 * [Verkefni 5]()
