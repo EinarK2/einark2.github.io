@@ -1,4 +1,10 @@
-#Git verkefni 1
+---
+layout: default
+title: Git svör
+
+---
+
+
 
 1. Hvað gera eftirfarandi Linux skipanir?
     cd - change directory
