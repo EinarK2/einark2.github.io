@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{page.title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <script src="main.js"></script>
-
+    <link rel="stylesheet" href="{{"/assets/css/styles.css"| prepend: site.url}}">
 </head>
 <body>
     <nav>
@@ -17,6 +15,7 @@
         <h1>{{ page.title | upcase }}</h1>
     </header>
     <main>
+
         <aside>
             {% include timeline.html %}
         </aside>
