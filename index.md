@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Verkefni 2. Jekyll vefsíða
+title: Jekyll vefsíða
 
 ---
 

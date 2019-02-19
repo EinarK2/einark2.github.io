@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}">
 </head>
 <body>
+    
     <nav>
         {% include navigation.html %}
     </nav>
@@ -15,13 +16,13 @@
         <h1>{{ page.title | upcase }}</h1>
     </header>
     <main>
-
         <aside>
             {% include timeline.html %}
         </aside>
-        <article>
+        <article class="mainarticle">
         {{ content }}
         </article>
     </main>
+    
 </body>
 </html>

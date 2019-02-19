@@ -2,4 +2,34 @@
   color: green; }
 
 body {
-  color: red; }
+  background-color: #ffde4d;
+  max-width: 60em;
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6; }
+
+header h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #003fb3;
+  font-weight: normal;
+  margin: .5em;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1; }
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold; }
+
+nav {
+  grid-area: nav; }
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #b38900; }
