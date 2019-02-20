@@ -1,12 +1,13 @@
 .current {
-    color: darkgreen;
+    color: green;
 }
 body {
-    background-color: #ffde4d;
     max-width: 60em;
     margin: 0 auto;
+    height: 100vh;
     font-family: 'Fira Sans', sans-serif;
     line-height: 1.6;
+    background-image: linear-gradient(#fff, rgb(218, 134, 134))
 }
 header h1 {
     font-family: 'Oswald', sans-serif;
@@ -27,10 +28,30 @@ h2 {
     font-weight: bold;
 }
 nav {
-    grid-area: nav;
-}
-nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    background-color: #b38900;
+    background-color: #fff;
+}
+.valmynd {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    position: relative;
+    padding: 0.5em 0;
+    list-style-type: none;
+    background-image: linear-gradient(#fff), (#fff);
+    border: 2px solid black;
+    font-size: 1.5em;
+}
+a {
+    font-family: comic sans-serif;
+    color: blue;
+    text-decoration-line: none;
+}
+a:hover {
+    text-decoration-line: underline;
 }
