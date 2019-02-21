@@ -4,8 +4,14 @@ title: Jekyll vefsíða
 
 ---
 
-# Halló heimur
+# Inngangur
 
-## {{ "Þetta er nýja vefsíðan mín" | upcase }}
+## {{ "Þetta er nýja vefsíðan mín" }}
 
-#### {{ "ég held það" | capitalize }}
+### {{ "Test" | upcase }}
+
+#### {{ "test" | capitalize }}
+
+##### Ég heiti Einar Karl Pétursson
+
+###### Test

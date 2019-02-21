@@ -10,11 +10,15 @@
 <body>
     
     <nav class="valmynd">
-        {% include navigation.html %}
+        <article>
+            <div>
+                {% include navigation.html %}
+            </div>
+            <div>
+                <h1>{{ page.title }}</h1>
+            </div>
+        </article>
     </nav>
-    <header>
-        <h1>{{ page.title }}</h1>
-    </header>
     <main>
         <aside>
             {% include timeline.html %}
