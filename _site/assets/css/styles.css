@@ -24,6 +24,9 @@ a {
   color: #fff;
   text-decoration-line: none; }
 
+a:hover {
+  color: #87C637; }
+
 .valmynd {
   width: auto;
   background-color: #1D1E20;
@@ -90,6 +93,10 @@ a {
     text-decoration: underline; }
   .timeline h2 {
     color: #87C637; }
+  .timeline .artists {
+    text-align: center; }
+  .timeline .albums {
+    text-align: center; }
 
 .default h1 {
   text-align: center;

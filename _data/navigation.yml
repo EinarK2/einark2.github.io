@@ -2,7 +2,7 @@
   link: /
 - name: Um mig
   link: /about.html
-- name: Albums
-  link: /blog.html
-- name: Artists
+- name: Listamenn
   link: /staff.html
+- name: Albúm
+  link: /blog.html
