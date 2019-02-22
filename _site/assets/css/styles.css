@@ -41,8 +41,9 @@ a:hover {
       display: flex;
       text-align: left; }
       .valmynd div div:first-child img {
-        height: 2.2em;
-        width: 2.2em; }
+        padding-right: 10px;
+        height: 2.7em;
+        width: 2.5em; }
       .valmynd div div:first-child p {
         font-family: 'Righteous', cursive;
         font-size: 1.7em;
@@ -62,7 +63,7 @@ a:hover {
       .valmynd div div:nth-child(2) .valmynd_litur {
         margin: 0; }
       .valmynd div div:nth-child(2) .current {
-        color: #7e965c; }
+        color: #1ED760; }
     @media screen and (max-width: 1000px) {
       .valmynd div {
         display: block;

@@ -12,8 +12,9 @@
             display: flex;
             text-align: left;
             img{
-                height: 2.2em;
-                width: 2.2em;
+                padding-right: 10px;
+                height: 2.7em;
+                width: 2.5em;
             }
             p{
                 font-family: 'Righteous', cursive;
@@ -39,7 +40,7 @@
             margin: 0;
             }
             .current{
-            color: rgb(126, 150, 92);
+            color: #1ED760;
             }
         }
         @media screen and (max-width: 1000px){
