@@ -3,6 +3,7 @@ short_name: dg
 name: Death Grips
 position: Expermimental Hip Hop
 description: Death Grips er hljómsveit úr Sacramento California sem var stofnuð árið 2010
+picture: /pictures/deathgrips.jpg
 ---
  Death Grips er hljómsveit úr Sacramento California sem var stofnuð árið 2010 
 

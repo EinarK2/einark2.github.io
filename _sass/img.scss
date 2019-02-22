@@ -1,0 +1,31 @@
+.album{
+    display: flex;
+    img{
+        height: 250px;
+        width: 250px;
+    }
+    @media screen and (max-width: 1000px){
+        display: block;
+        justify-content: center;
+        img{
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+.artist{
+    display: flex;
+    img{
+        height: 250px;
+        width: 250px*2,5px;
+    }
+    @media screen and (max-width: 1000px){
+        display: block;
+        justify-content: center;
+        img{
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

@@ -115,3 +115,29 @@ a:hover {
       font-size: 1.2em; }
   .default article aside {
     padding: 5px; }
+
+.album {
+  display: flex; }
+  .album img {
+    height: 250px;
+    width: 250px; }
+  @media screen and (max-width: 1000px) {
+    .album {
+      display: block;
+      justify-content: center; }
+      .album img {
+        justify-content: center;
+        text-align: center; } }
+
+.artist {
+  display: flex; }
+  .artist img {
+    height: 250px;
+    width: 500px, 5px; }
+  @media screen and (max-width: 1000px) {
+    .artist {
+      display: block;
+      justify-content: center; }
+      .artist img {
+        justify-content: center;
+        text-align: center; } }

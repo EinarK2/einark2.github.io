@@ -3,6 +3,7 @@ short_name: gorillaz
 name: Gorillaz
 position: Alternative, Trip Hop, Electronica, Hip Hop
 description: Gorillaz er hljómsveit með teiknimyndpersónum en er í raun samtarfsverkefni Damon Albarn og Jamie Hewlett
+picture: /pictures/gorillaz.png
 ---
 Gorillaz er hljómsveit með teiknimyndpersónum en er í raun samtarfsverkefni Damon Albarn og Jamie Hewlett
 
