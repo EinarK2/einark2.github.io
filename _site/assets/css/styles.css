@@ -1,23 +1,9 @@
-.current {
-  color: green; }
-
 body {
   max-width: 60em;
   margin: 0 auto;
-  height: 100vh;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #fff;
-  line-height: 1.6;
-  background-image: linear-gradient(#121315, #121315); }
-
-header h1 {
-  font-family: 'Oswald', sans-serif;
-  color: #003fb3;
-  font-weight: normal;
-  margin: .5em;
-  text-align: center;
-  font-size: 3em;
-  line-height: 1; }
+  background-color: #121315; }
 
 h2 {
   display: block;
@@ -31,27 +17,94 @@ h2 {
 nav {
   display: flex;
   flex-flow: row;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: #fff; }
-
-.valmynd {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  position: relative;
-  padding: 0.5em 0;
-  list-style-type: none;
-  background-image: linear-gradient(#1D1E20, #1D1E20);
-  border: 2px solid black;
-  font-size: 1.5em; }
+  justify-content: center; }
 
 a {
-  font-family: comic sans-serif;
-  color: blue;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
   text-decoration-line: none; }
 
-a:hover {
-  text-decoration-line: underline; }
+.valmynd {
+  width: auto;
+  background-color: #1D1E20;
+  padding: 0.5em;
+  font-family: comic sans-serif;
+  color: #fff; }
+  .valmynd div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .valmynd div div:first-child {
+      display: flex;
+      text-align: left; }
+      .valmynd div div:first-child img {
+        height: 2.2em;
+        width: 2.2em; }
+      .valmynd div div:first-child p {
+        font-family: 'Righteous', cursive;
+        font-size: 1.7em;
+        margin: 0;
+        padding-left: 2px; }
+    .valmynd div div:nth-child(2) {
+      text-align: right; }
+      .valmynd div div:nth-child(2) a {
+        grid-area: haegri;
+        text-decoration: none;
+        font-size: 1.7em;
+        justify-content: right;
+        padding-right: 10px;
+        color: #fff; }
+      .valmynd div div:nth-child(2) a:hover {
+        color: #87C637; }
+      .valmynd div div:nth-child(2) .valmynd_litur {
+        margin: 0; }
+      .valmynd div div:nth-child(2) .current {
+        color: #7e965c; }
+    @media screen and (max-width: 1000px) {
+      .valmynd div {
+        display: block;
+        text-align: left;
+        justify-content: center; }
+        .valmynd div img {
+          margin: 0;
+          text-align: center;
+          justify-content: center; }
+        .valmynd div div:nth-child(2) {
+          justify-content: center;
+          text-align: center; } }
+    @media screen and (max-width: 510px) {
+      .valmynd div div:nth-child(2) a {
+        display: block; } }
+
+.timeline {
+  padding-left: 2em;
+  text-align: left; }
+  .timeline ul {
+    font-size: 1.3em; }
+  .timeline a {
+    text-decoration: none;
+    line-height: 1em;
+    color: #fff; }
+  .timeline a:hover {
+    color: #87C637;
+    text-decoration: underline; }
+  .timeline h2 {
+    color: #87C637; }
+
+.default h1 {
+  text-align: center;
+  font-size: 2em; }
+.default main {
+  padding: 5px; }
+.default article {
+  max-width: 1280px;
+  color: #ffffff; }
+  .default article div {
+    text-align: center;
+    padding: 10px; }
+    .default article div h1 {
+      font-size: 2em; }
+    .default article div p {
+      font-size: 1.2em; }
+  .default article aside {
+    padding: 5px; }

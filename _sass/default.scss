@@ -1,0 +1,22 @@
+.default{
+    h1{
+        text-align: center;
+        font-size: 2em;
+    }
+    main {
+        padding: 5px;
+    }
+    article{
+        max-width: 1280px;                   
+        color: #ffffff;
+        div{
+            text-align: center;
+            padding: 10px;
+            h1{font-size: 2em;}
+            p{font-size: 1.2em;}
+        }
+        aside{
+            padding: 5px;
+        }
+    } 
+}

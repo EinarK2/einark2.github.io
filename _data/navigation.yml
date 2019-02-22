@@ -1,7 +1,5 @@
 - name: Forsíða
   link: /
-- name: Git svor
-  link: /verk1/git-svor.html
 - name: Um mig
   link: /about.html
 - name: Blogg

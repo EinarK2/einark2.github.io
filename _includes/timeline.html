@@ -1,0 +1,18 @@
+<nav class="timeline">
+    <h2>Artists:</h2>
+    <ul>
+        {% for author in site.authors %}
+            <li>
+            <a href="{{ author.url }}">{{ author.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <h2>Albums:</h2>
+    <ul>
+        {% for post in site.posts %}
+            <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

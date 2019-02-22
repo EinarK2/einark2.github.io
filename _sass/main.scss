@@ -1,23 +1,9 @@
-.current {
-    color: green;
-}
 body {
     max-width: 60em;
     margin: 0 auto;
-    height: 100vh;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #fff;
-    line-height: 1.6;
-    background-image: linear-gradient(#121315, #121315)
-}
-header h1 {
-    font-family: 'Oswald', sans-serif;
-    color: #003fb3;
-    font-weight: normal;
-    margin: .5em;
-    text-align: center;
-    font-size: 3em;
-    line-height: 1;
+    background-color: #121315;
 }
 h2 {
     display: block;
@@ -32,27 +18,9 @@ nav {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
-.valmynd {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    position: relative;
-    padding: 0.5em 0;
-    list-style-type: none;
-    background-image: linear-gradient(#1D1E20, #1D1E20);
-    border: 2px solid black;
-    font-size: 1.5em;
 }
 a {
-    font-family: comic sans-serif;
-    color: blue;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
     text-decoration-line: none;
-}
-a:hover {
-    text-decoration-line: underline;
 }

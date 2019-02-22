@@ -1,0 +1,67 @@
+.valmynd{
+    width: auto;
+    background-color: #1D1E20;
+    padding: 0.5em;
+    font-family: comic sans-serif;
+    color: #fff;
+    div{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        div:first-child{
+            display: flex;
+            text-align: left;
+            img{
+                height: 2.2em;
+                width: 2.2em;
+            }
+            p{
+                font-family: 'Righteous', cursive;
+                font-size: 1.7em;
+                margin: 0;
+                padding-left: 2px;
+            }
+        }
+        div:nth-child(2){
+            text-align: right;
+            a{
+            grid-area: haegri;
+            text-decoration: none;
+            font-size: 1.7em;
+            justify-content: right;
+            padding-right: 10px;
+            color: #fff;
+            }
+            a:hover{
+            color: #87C637
+            }
+            .valmynd_litur{
+            margin: 0;
+            }
+            .current{
+            color: rgb(126, 150, 92);
+            }
+        }
+        @media screen and (max-width: 1000px){
+            display: block;
+            text-align: left;
+            justify-content: center;
+            img{
+                margin: 0;
+                text-align: center;
+                justify-content: center;
+            }
+            div:nth-child(2){
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        @media screen and (max-width: 510px){
+            div:nth-child(2){
+                a{
+                    display: block;
+                }
+            }
+        }
+    }
+}
