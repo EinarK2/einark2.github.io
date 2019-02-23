@@ -137,8 +137,7 @@ a:hover {
     width: 500px, 5px; }
   @media screen and (max-width: 1000px) {
     .artist {
-      display: block;
-      justify-content: center; }
+      display: block; }
       .artist img {
         justify-content: center;
         text-align: center; } }
