@@ -1,8 +1,8 @@
-- name: Forsíða
+- name: <span class="icon-home"></span>Forsíða
   link: /
-- name: Um mig
+- name: <span class="icon-pencil2"></span>Um mig
   link: /about.html
-- name: Listamenn
+- name: <span class="icon-users"></span>Listamenn
   link: /staff.html
-- name: Albúm
+- name: <span class="icon-music"></span>Albúm
   link: /blog.html

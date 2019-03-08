@@ -9,3 +9,5 @@ picture: /pictures/agaetisbyrjun.JPG
 An ok start
 
 Hljómsveit: [Sigur Rós](/authors/sigurros.html)
+
+Tengill: [Spotify <span class="icon-spotify"></span>](https://open.spotify.com/album/7LKQtdC6uWxqLzSbDonFij?si=Tv7RkejQRLW4U4ozpRDLsQ){:target="_blank"}
