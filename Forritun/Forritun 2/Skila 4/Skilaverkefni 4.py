@@ -153,14 +153,14 @@ while val !="5":
         skrifaTupleSkra(nyttTuple,"tuple")
         print("Summa talnanna í fyrsta tuple-inu er:",summaTuple("tuple"))
     elif val=="4":
-        '''dict1=nyttDict()
+        dict1=nyttDict()
         skrifaDict(dict1,"dictskra")
         lesaDict("dictskra")
         dict2=nyttDict()
         skrifaDict(dict2,"dictskra")
         dict3=nyttDict()
-        skrifaDict(dict3,"dictskra")'''
-        prentaDict("dictskra")
+        skrifaDict(dict3,"dictskra")
+        #prentaDict("dictskra")
     elif val=="5":
         print("Ókei Bæ")
     else:
