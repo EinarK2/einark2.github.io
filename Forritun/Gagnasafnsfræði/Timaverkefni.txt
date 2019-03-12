@@ -1,0 +1,7 @@
+Jón;Plútó;Hundur
+Geir;Keli;Köttur
+Einar;Tumi;Froskur
+Anna;Jón;Hundur
+Gummi;Ragnar;Api
+Karl;Nonni;Snákur
+Halli;Lalli;Hundur
