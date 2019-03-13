@@ -98,13 +98,15 @@ def lesaDict(nafnTxtSkra):
     print(skra.read()) #Prenta innihald skránna
     skra.close() #Loka skrá
 def prentaDict(nafnTxtSkra):
-    skra = open(nafnTxtSkra, "r", encoding="utf-8")
-    dict=skra.read()
+    skra = open(nafnTxtSkra, 'r', encoding='utf-8') #Opna Skrá
+    for teljari, x in enumerate(skra): #Fer í gegnum skrá
+        print("Lína", teljari + 1, ":") #Prentar fyrir hverja línu
+        listi = x[1:-2].split(", ") #Tekur slaufusviga og kommur út
+        for i in listi: #Fer í gegnum lista
+            strengur = i.replace("'", "") # tekur ' út
+            lykill, gildi = strengur.split(":") #Tekur : út
+            print(lykill + " ", gildi) #Skrifar lykil og gildi
     skra.close()
-    for x, y in dict.items(): # Fer í gegnum dict
-        print(x) # Prentar key(x) og value(dict[x])
-        print(y)
-
 #tuple:
 tolur=(1,2,3,4,5,6,7,8,9)
 stafir=('a','b','c','d','e','f','g','h')
@@ -161,7 +163,7 @@ while val !="5":
         skrifaDict(dict2,"dictskra")
         dict3=nyttDict()
         skrifaDict(dict3,"dictskra")
-        #prentaDict("dictskra")
+        prentaDict("dictskra")
     elif val=="5":
         print("Ókei Bæ")
     else:
