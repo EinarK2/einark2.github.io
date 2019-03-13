@@ -101,8 +101,9 @@ def prentaDict(nafnTxtSkra):
     skra = open(nafnTxtSkra, "r", encoding="utf-8")
     dict=skra.read()
     skra.close()
-    for x in dict: # Fer í gegnum dict
+    for x, y in dict.items(): # Fer í gegnum dict
         print(x) # Prentar key(x) og value(dict[x])
+        print(y)
 
 #tuple:
 tolur=(1,2,3,4,5,6,7,8,9)
