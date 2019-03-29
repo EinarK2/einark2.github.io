@@ -43,14 +43,53 @@ class Nemandi:
     def __str__(self):
         return "Nemandi: "+self.nafn+"\nAldur: "+str(self.aldur)+"\nBraut: "+self.braut
 
-    def elsti(self, listinem):
+    def elsti(listi):
+        aldur = 0
+        nafn = ""
+        for x in listi:
+            if x.aldur > aldur:
+                aldur = x.aldur
+                nafn = x.nafn
+        print("Elsti er:", nafn, "hann er", aldur, "ára")
+
+    def rada(listi):
+        nafnalisti = []
+        for x in listi:
+            nafnalisti.append(x.nafn)
+        nafnalisti.sort()
+        print("Listinn raðaður: ", nafnalisti)
+
+    def fjoldiBraut(listi):
+        fjHar = 0
+        fjTolvu = 0
+        for x in listi:
+            if x.braut == "hb":
+                fjHar = fjHar+1
+            elif x.braut == "tb":
+                fjTolvu += 1
+            else:
+                print(x.braut)
+        print("Fjöldi á tölvubraut:", fjTolvu, "\nFjöldi á hársnyrtibraut:", fjHar)
+
+
+class Bankareikningur:
+    def __init__(self, n, i):
+        self.nafn = n
+        self.inneign = i
+
+    def __str__(self):
+        return "Nafn: "+self.nafn+" Inneign: "+str(self.inneign)
+
+    vextir = 0.04
+
+    def reiknaInneign(listi):
+        #for x in listi:
+        pass
+            #inneign = x.inneign*x.vextir
+
+    def breytaArsvexti(inneign):
         pass
 
-    def rada(self, listinem):
-        pass
-
-    def fjoldiBraut(self, listinem):
-        pass
 # Valmynd:
 val = ""
 while val != "5":
@@ -62,7 +101,8 @@ while val != "5":
         print(s1)
     elif val == "2":
         medlimaListi = []
-        for x in range(2):
+        margir = int(input("Hve marga viltu setja í símaskránna? "))
+        for x in range(margir):
             nafn = input("Sláðu inn Nafn í símaskrá ")
             gsm = int(input("Sláðu inn GSM "))
             simi = int(input("Sláðu inn heimasíma "))
@@ -71,15 +111,26 @@ while val != "5":
             medlimaListi.append(t)
         for x in medlimaListi:
             print(x)
-        medlimaListi[0].setNafn("Einar Karl")
-        medlimaListi[0].setGsm(6948820)
-        medlimaListi[0].setHeimasimi(5643103)
-        medlimaListi[0].setEmail("einarkarlp@gmail.com")
-        print("breytt:\n", medlimaListi[0])
-
+        breyta = ""
+        while breyta != "n":
+            breyta = input("Viltu breyta gsm? (j/n) ")
+            if breyta == "j":
+                numer = int(input("Númer hvað í skránni viltu breyta? "))
+                numer -= 1
+                print(numer)
+                breytanafn = input("Sláðu inn Nafn ")
+                breytagsm = int(input("Sláðu inn GSM "))
+                breytasimi = int(input("Sláðu inn heimasíma "))
+                breytaemail = input("Sláðu inn Email ")
+                medlimaListi[numer].setNafn(breytanafn)
+                medlimaListi[numer].setGsm(breytagsm)
+                medlimaListi[numer].setHeimasimi(breytasimi)
+                medlimaListi[numer].setEmail(breytaemail)
+                print("Breytt:\n", medlimaListi[numer])
     elif val == "3":
         listinem = []
-        for x in range(2):
+        margir = int(input("Hve marga nemendur viltu setja inn? "))
+        for x in range(margir):
             nafn = input("Sláðu inn nafn Nemanda: ")
             aldur = int(input("Sláðu inn Aldur: "))
             braut = input("Sláðu inn braut: ")
@@ -87,9 +138,12 @@ while val != "5":
             listinem.append(t)
         tel = 1
         for x in listinem:
-            print("Nemandi", tel, ":")
+            print("-- Nemandi", tel, ":")
             print(x)
             tel += 1
+        Nemandi.elsti(listinem)
+        Nemandi.rada(listinem)
+        Nemandi.fjoldiBraut(listinem)
     elif val == "4":
         pass
     elif val == "5":

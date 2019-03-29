@@ -226,3 +226,6 @@ a:hover {
 
 .icon-lastfm:before {
   content: "\eacb"; }
+
+.background {
+  background-image: url(); }
