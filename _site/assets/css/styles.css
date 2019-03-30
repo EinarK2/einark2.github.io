@@ -227,5 +227,41 @@ a:hover {
 .icon-lastfm:before {
   content: "\eacb"; }
 
-.background {
-  background-image: url(); }
+#plata {
+  animation-timing-function: ease;
+  width: 0;
+  height: 0; }
+
+#lucky {
+  animation-timing-function: ease-out;
+  width: 276;
+  height: 269; }
+
+@keyframes test {
+  from {
+    top: 0px; }
+  to {
+    top: 200px; } }
+.ad {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-radius: .4em;
+  box-shadow: inset 0 0 3em #999;
+  overflow: hidden;
+  margin: 1em;
+  width: 337px;
+  height: 200px;
+  position: relative;
+  background-color: white;
+  transition-timing-function: ease-in-out; }
+
+.plata {
+  animation-name: test;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; }
+
+.lucky {
+  animation-name: test;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; }
