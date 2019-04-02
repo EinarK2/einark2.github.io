@@ -147,8 +147,8 @@ a:hover {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?45ka6e");
-  src: url("fonts/icomoon.eot?45ka6e#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?45ka6e") format("truetype"), url("fonts/icomoon.woff?45ka6e") format("woff"), url("fonts/icomoon.svg?45ka6e#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?45ka6e");
+  src: url("../fonts/icomoon.eot?45ka6e#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?45ka6e") format("truetype"), url("../fonts/icomoon.woff?45ka6e") format("woff"), url("../fonts/icomoon.svg?45ka6e#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -241,30 +241,73 @@ a:hover {
   height: 269; }
 
 @keyframes test {
-  from {
+  0% {
+    background-color: red;
+    left: 0px;
     top: 0px; }
-  to {
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px; }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px; }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px; }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px; } }
+@keyframes test2 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px; }
+  100% {
+    background-color: blue;
+    left: 0px;
     top: 200px; } }
 .ad {
   display: flex;
   align-items: center;
   align-content: center;
-  border-radius: .4em;
-  box-shadow: inset 0 0 3em #999;
   overflow: hidden;
-  margin: 1em;
-  width: 337px;
-  height: 200px;
   position: relative;
   background-color: white;
   transition-timing-function: ease-in-out; }
 
-.plata {
-  animation-name: test;
-  animation-duration: 5s;
-  animation-iteration-count: infinite; }
+#lucky {
+  width: 150px;
+  animation: 2s roty infinite linear; }
 
-.lucky {
-  animation-name: test;
-  animation-duration: 5s;
-  animation-iteration-count: infinite; }
+#ad {
+  margin: 1em;
+  background: white;
+  overflow: hidden;
+  border-radius: .4em;
+  box-shadow: inset 0 0 3em #999;
+  width: 337px;
+  height: 200px; }
+
+#ad a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  animation: 1s fadein ease-in-out;
+  animation-fill-mode: forwards; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes roty {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
