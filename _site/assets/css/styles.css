@@ -147,8 +147,8 @@ a:hover {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?2z9ncd");
-  src: url("../fonts/icomoon.eot?2z9ncd#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?2z9ncd") format("truetype"), url("../fonts/icomoon.woff?2z9ncd") format("woff"), url("../fonts/icomoon.svg?2z9ncd#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?45ka6e");
+  src: url("fonts/icomoon.eot?45ka6e#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?45ka6e") format("truetype"), url("fonts/icomoon.woff?45ka6e") format("woff"), url("fonts/icomoon.svg?45ka6e#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -205,6 +205,9 @@ a:hover {
 
 .icon-fire:before {
   content: "\e9a9"; }
+
+.icon-menu:before {
+  content: "\e9bd"; }
 
 .icon-omega:before {
   content: "\ea66"; }
