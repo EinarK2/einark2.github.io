@@ -4,7 +4,6 @@ import math
 
 
 # Klasar:
-
 # Klasinn Hringur hefur eiginleikann radíus
 class Hringur:
     def __init__(self, r): # Smiður
@@ -47,13 +46,13 @@ class Hnit:
 
     def hvadahluti(self):
         if self.x > 0 and self.y > 0:
-            print("Er í hluta 1")
+            print("Hnitin eru í hluta 2")
         elif self.x > 0 and self.y < 0:
-            print("Er í hluta 2")
+            print("Hnitin eru í hluta 4")
         elif self.x < 0 and self.y < 0:
-            print("Er í hluta 3")
+            print("Hnitin eru í hluta 3")
         elif self.x < 0 and self.y > 0:
-            print("Er í hluta 4")
+            print("Hnitin eru í hluta 1")
         else:
             print("what")
 
@@ -73,14 +72,15 @@ while val != "0":
         print("Seinna y er:", xz.gildiy2())
 
     elif val == "2":
-        h1 = Hnit(-1, 4)
-        h2 = Hnit(-5, -2)
-        print(h1)
-        print(h2)
-        print("Stysta leiðin er:", round(h1.stystaleid(h2), 2))
-        print("")
-
-
+        x, y = map(int, input("Sláðu inn hnit: ").split(" "))
+        xy = Hnit(x, y)
+        print(xy)
+        xy.hvadahluti()
+        x2, y2 = map(int, input("Sláðu inn önnur hnit: ").split(" "))
+        xy2 = Hnit(x2, y2)
+        print(xy2)
+        xy2.hvadahluti()
+        print("Stysta leiðin milli þeirra er:", round(xy.stystaleid(xy2), 2))
 
     elif val == "0":
         print("Ókei bæ")
