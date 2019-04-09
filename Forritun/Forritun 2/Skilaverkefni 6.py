@@ -19,9 +19,6 @@ class Hermann:
             vopn = "exi"
         return "hefur "+str(self.lif)+" líf. Vopnið er: "+vopn+".\tAflið er: "+str(self.afl)
 
-    def fight(self):
-        pass
-
 herdeildA = []
 herdeildB = []
 for x in range(5):
@@ -47,28 +44,126 @@ for x in herdeildB:
     print("Hermaður", tel, x)
     tel += 1
 
-print("FIGHT")
+print("--- FIGHT ---")
 
-if herdeildA[0].afl < herdeildB[0].afl:
-    # Þá vinnur A
-    # Taka þarf eitt líf af B
-    # B þarf að fara adtast í sinn lista ef hann á eftir líf
-    # Ef B á engin líf eftir þarf að eyða honum úr listanum
-    print("wowza")
-a0 = herdeildA.pop(0)
-print("Poppað tilvik", a0)
-print(" HERDEILD A EFTIR POP")
-tel = 1
-for x in herdeildA:
-    print("Hermaður", tel, x)
-    tel += 1
-print("HERDEILD A EFTIR INSERT")
-# Bæta við stkainu sem tapaði aftast
-herdeildA.append(a0)
-tel = 1
-for x in herdeildA:
-    print("Hermaður", tel, x)
-    tel += 1
+flag = False
+while flag != True:
+    try:
+        # If setning ef A tapar á móti B
+        if herdeildA[0].afl < herdeildB[0].afl:
+            print("B vann A þar sem afl B var", herdeildB[0].afl, "en afl A var", herdeildA[0].afl)
+            a0 = herdeildA.pop(0)
+            a0.lif = a0.lif - 1
+            if a0.lif == 0:
+                print("Hermaður A dó þar sem hann var bara með eitt líf eftir")
+            else:
+                herdeildA.append(a0)  # Bæta við stakinu sem tapaði aftast
+            print("HERDEILD A EFTIR BARDAGA")
+            tel = 1
+            for x in herdeildA:
+                print("Hermaður", tel, x)
+                tel += 1
 
+            if herdeildA == 0:
+                flag = True
+                print("Herdeild B vann!")
+        elif herdeildA[0].afl > herdeildB[0].afl:
+            print("A vann B þar sem afl A var", herdeildA[0].afl, "en afl B var", herdeildB[0].afl)
+            b0 = herdeildB.pop(0)
+            b0.lif = b0.lif - 1
+            if b0.lif == 0:
+                print("Hermaður B dó þar sem hann var bara með eitt líf eftir")
+            else:
+                herdeildB.append(b0)  # Bæta við stakinu sem tapaði aftast
 
+            print("HERDEILD B EFTIR BARDAGA")
+            tel = 1
+            for x in herdeildB:
+                print("Hermaður", tel, x)
+                tel += 1
 
+        elif herdeildA[0].afl == herdeildB[0].afl:
+            print("Afl A og B er það sama!")
+            # 1 Sverð  2 spjót  3 exi
+            # Segjum að sverð vinnur exi, exi vinnur spjót og spjót vinnur sverð
+
+            if herdeildA[0].vopn == 1 and herdeildB[0].vopn == 2:
+                print("A (Sverð) tapar á móti B (spjót)")
+                a0 = herdeildA.pop(0)
+                a0.lif = a0.lif - 1
+                if a0.lif == 0:
+                    print("Hermaður A dó þar sem hann var bara með eitt líf eftir")
+                else:
+                    herdeildA.append(a0)  # Bæta við stakinu sem tapaði aftast
+
+                print("HERDEILD A EFTIR BARDAGA")
+                tel = 1
+                for x in herdeildA:
+                    print("Hermaður", tel, x)
+                    tel += 1
+
+            elif herdeildA[0].vopn == 2 and herdeildB[0].vopn == 1:
+                print("B (Sverð) tapar á móti A (Spjót)")
+                b0 = herdeildB.pop(0)
+                b0.lif = b0.lif - 1
+                if b0.lif == 0:
+                    print("Hermaður B dó þar sem hann var bara með eitt líf eftir")
+                else:
+                    herdeildB.append(b0)  # Bæta við stakinu sem tapaði aftast
+
+                print("HERDEILD B EFTIR BARDAGA")
+                tel = 1
+                for x in herdeildB:
+                    print("Hermaður", tel, x)
+                    tel += 1
+
+            elif herdeildA[0].vopn == 3 and herdeildB[0].vopn == 2:
+                print("B (Spjót) tapar á móti A (Exi)")
+                b0 = herdeildB.pop(0)
+                b0.lif = b0.lif - 1
+                if b0.lif == 0:
+                    print("Hermaður B dó þar sem hann var bara með eitt líf eftir")
+                else:
+                    herdeildB.append(b0)  # Bæta við stakinu sem tapaði aftast
+
+                print("HERDEILD B EFTIR BARDAGA")
+                tel = 1
+                for x in herdeildB:
+                    print("Hermaður", tel, x)
+                    tel += 1
+
+            elif herdeildA[0].vopn == 2 and herdeildB[0].vopn == 3:
+                print("A (Spjót) tapar á móti B (Exi)")
+                print("A (Sverð) tapar á móti B (spjót)")
+                a0 = herdeildA.pop(0)
+                a0.lif = a0.lif - 1
+                if a0.lif == 0:
+                    print("Hermaður A dó þar sem hann var bara með eitt líf eftir")
+                else:
+                    herdeildA.append(a0)  # Bæta við stakinu sem tapaði aftast
+                print("HERDEILD A EFTIR BARDAGA")
+                tel = 1
+                for x in herdeildA:
+                    print("Hermaður", tel, x)
+                    tel += 1
+
+            else:
+                print("Vopnin eru alveg eins svo þeir misstu báðir líf")
+                a0 = herdeildA.pop(0)
+                a0.lif = a0.lif - 1
+                if a0.lif == 0:
+                    print("Hermaður A dó þar sem hann var bara með eitt líf eftir")
+                else:
+                    herdeildA.append(a0)  # Bæta við stakinu sem tapaði aftast
+
+                b0 = herdeildB.pop(0)
+                b0.lif = b0.lif - 1
+                if b0.lif == 0:
+                    print("Hermaður B dó þar sem hann var bara með eitt líf eftir")
+                else:
+                    herdeildB.append(b0)  # Bæta við stakinu sem tapaði aftast
+    except:
+        break
+
+print("Leik lokið")
+# Hermann.Atapar()  try = if.  except = else.
