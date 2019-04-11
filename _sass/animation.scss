@@ -46,6 +46,15 @@
         opacity: 1;
     }
 }
+@keyframes slide {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: 200px;
+    }
+}
+
 @keyframes roty {
     0% {
         opacity: 1;

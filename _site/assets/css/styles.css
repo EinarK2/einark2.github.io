@@ -37,6 +37,7 @@ a:hover {
     margin: 0 auto;
     justify-content: space-between; }
     .valmynd div div:first-child {
+      padding-top: 19px;
       display: flex;
       text-align: left; }
       .valmynd div div:first-child img {
@@ -44,11 +45,18 @@ a:hover {
         padding-bottom: 10px;
         height: 2.2em;
         width: 2.2em; }
+        @media screen and (max-width: 465px) {
+          .valmynd div div:first-child img {
+            height: 3em;
+            width: 3em; } }
       .valmynd div div:first-child p {
         font-family: 'Righteous', cursive;
         font-size: 1.7em;
         margin: 0;
         padding-left: 2px; }
+        @media screen and (max-width: 465px) {
+          .valmynd div div:first-child p {
+            display: none; } }
     .valmynd div div:nth-child(2) {
       text-align: right; }
       .valmynd div div:nth-child(2) a {
@@ -90,11 +98,15 @@ a:hover {
     display: block;
     background-color: #1D1E20;
     color: white;
-    padding: 2px;
+    padding: 10px;
     font-size: 30px;
     border: none;
-    cursor: pointer; }
+    cursor: pointer; } }
+  @media screen and (max-width: 1050px) and (max-width: 465px) {
+    .dropbtn {
+      font-size: 45px; } }
 
+@media screen and (max-width: 1050px) {
   .dropdown {
     position: relative; }
 
@@ -302,6 +314,11 @@ a:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
+@keyframes slide {
+  0% {
+    right: 0px; }
+  100% {
+    right: 200px; } }
 @keyframes roty {
   0% {
     opacity: 1;
