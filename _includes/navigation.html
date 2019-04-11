@@ -1,16 +1,14 @@
 <nav class="valmynd">
   <div>
-    <div>
-      <img src="/pictures/vinyl.svg" alt="Mynd">
-      <p>Einar Talar um Tónlist</p>
+    <img src="/pictures/vinyl.svg" alt="Mynd">
+    <p>Einar Talar um Tónlist</p>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn icon-menu"></button>
+    <div class="dropdown-content">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+      {% endfor %}
     </div>
-    <li class="dropdown">
-      <div class="dropdown-content">
-        <button class="dropbtn">TEST</button>
-        {% for item in site.data.navigation %}
-          <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-        {% endfor %}
-      </div>
-    </li>
   </div>
 </nav>
