@@ -22,51 +22,91 @@
                 font-size: 1.7em;
                 margin: 0;
                 padding-left: 2px;
-            }
+            } 
+            
         }
         div:nth-child(2){
             text-align: right;
             a{
-            grid-area: haegri;
-            text-decoration: none;
-            font-size: 1.7em;
-            justify-content: right;
-            padding-right: 10px;
-            color: #fff;
+                text-decoration: none;
+                font-size: 1.7em;
+                justify-content: right;
+                padding-right: 10px;
+                color: #fff;
             }
             a:hover{
-            color: #87C637
+                color: #87C637;
             }
-            .valmynd_litur{
-            margin: 0;
-            }
-            .current{
-            color: #1ED760;
+            .current {
+                color: #1ED760;
             }
             span {
                 padding: 7px;
             }
         }
-        @media screen and (max-width: 1000px){
+    }
+}
+.dropbtn {
+    display: none;
+}
+.dropdown-content {
+    
+}
+.dropdown {
+    list-style-type: none;
+}
+.listi {
+    list-style-type: none;
+    @media screen and (max-width: 780px) {
+        width: 200px;
+        background-color: #121315;
+        a {
             display: block;
-            text-align: left;
-            justify-content: center;
-            img{
-                margin: 0;
-                text-align: center;
-                justify-content: center;
-            }
-            div:nth-child(2){
-                justify-content: center;
-                text-align: center;
-            }
+            color: #121315;
+            padding: 8px 16px;
+            text-decoration: none;
+            
         }
-        @media screen and (max-width: 510px){
-            div:nth-child(2){
-                a{
-                    display: block;
-                }
-            }
+        a:hover {
+            background-color: #fff;
+            color: #121315;
         }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
     }
 }
