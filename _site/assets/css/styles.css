@@ -342,7 +342,7 @@ form {
   border-radius: 5px;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
-  width: 400px; }
+  width: 300px; }
 
 fieldset {
   border: 0;
@@ -374,16 +374,16 @@ input {
 .upplysingar .fyrri {
   width: 1em; }
 
-.account-action {
-  background: #f0f0f2;
-  border-top: 1px solid #c6c7cc;
-  padding: 20px; }
+.skraning {
+  padding: 20px;
+  text-align: center; }
 
-.account-action .btn {
-  background: linear-gradient(#49708f, #293f50);
+.skraning .btn {
   border: 0;
-  color: #fff;
   cursor: pointer;
   font-weight: bold;
-  float: left;
   padding: 8px 16px; }
+
+textarea {
+  width: 260px;
+  height: 100px; }
