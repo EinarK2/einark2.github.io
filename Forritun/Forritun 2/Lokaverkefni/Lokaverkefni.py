@@ -65,9 +65,24 @@ def spiltolvu(l):
     print("-"*10, "TÖLVA", "-"*10)
     for tel, x in enumerate(l):
         if tel != len(l) - 1:
-            print("X", end="  |  ")
+            print(x, end="  |  ")
         else:
-            print("X")
+            print(x)
+
+
+def tolvagerir(spil, bunki, stokkur):
+    tel = 0
+    for x in spil:
+        if bunki[-1].tegund == spil[x - 1].tegund or bunki[-1].nr == spil[x - 1].nr:
+            settuttolva = spil.pop(x - 1)
+            bunki.insert(0, settuttolva)
+            break
+        else:
+            tel += 1
+            if tel == 4:
+                print("Tölva gat ekki gert")
+            else:
+                spil.append(stokkur.pop(0))
 
 
 tilvik = Spil(0, 0)
@@ -96,6 +111,7 @@ kastbunki.append(spilastokkur.pop(0))  # Tekur úr stokk
 print("skrifa 'draga' til að draga")
 dragatel = 0
 on = True
+draga = True
 while on:
     print()
     spiltolvu(spilTolva)  # Sýnir spil tölvu
@@ -107,13 +123,16 @@ while on:
         for x in spilNotandi:
             if kastbunki[-1].tegund == x.tegund or kastbunki[-1].nr == x.nr:
                 print("Þú mátt ekki draga")
+                draga = False
                 break
-            else:  # THE FUCK
-                dragatel += 1
-                if dragatel == 4:
-                    print("Þú mátt ekki draga meir gerðu pass")
-                else:
-                    spilNotandi.append(spilastokkur.pop(0))
+            else:
+                draga = True
+        if draga == True:
+            dragatel += 1
+            if dragatel == 4:
+                print("Þú mátt ekki draga meir gerðu pass")
+            else:
+                spilNotandi.append(spilastokkur.pop(0))
     elif ut == "pass":
         if dragatel != 4:
             print("Þú getur ekki gert pass")
@@ -127,10 +146,11 @@ while on:
                 settUt = spilNotandi.pop(ut-1)
                 kastbunki.insert(0, settUt)
                 # Tölva gerir
+                tolvagerir(spilTolva, kastbunki, spilastokkur)
             else:
                 print("Þú getur ekki sett út þetta spil")
         except:
-            print("Þetta er ekki tala")
+            print("Þetta er ekki spil")
 
 
 
