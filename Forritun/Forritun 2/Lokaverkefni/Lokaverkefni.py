@@ -71,18 +71,40 @@ def spiltolvu(l):
 
 
 def tolvagerir(spil, bunki, stokkur):
+    gert = False
     tel = 0
     for x in spil:
-        if bunki[-1].tegund == spil[x - 1].tegund or bunki[-1].nr == spil[x - 1].nr:
-            settuttolva = spil.pop(x - 1)
-            bunki.insert(0, settuttolva)
+        if x.tegund == bunki[0].tegund or x.nr == bunki[0].nr:
+            sett = spil.pop(spil.index(x))
+            bunki.insert(0, sett)
+            gert = True
+            print("Tölva setti út", sett)
             break
+    if gert == False:
+        spil.append(stokkur.pop(0))
+        if spil[-1].nr == bunki[0].tegund or spil[-1].tegund == bunki[0].tegund:
+            sett = spil.pop(-1)
+            bunki.insert(0, sett)
+            print("Tölva dróg einu sinni")
+            print("Tölva setti út", sett)
         else:
-            tel += 1
-            if tel == 4:
-                print("Tölva gat ekki gert")
+            spil.append(stokkur.pop(0))
+            if spil[-1].nr == bunki[0].tegund or spil[-1].tegund == bunki[0].tegund:
+                sett = spil.pop(-1)
+                bunki.insert(0, sett)
+                print("Tölva dróg tvisvar")
+                print("Tölva setti út", sett)
             else:
                 spil.append(stokkur.pop(0))
+                if spil[-1].nr == bunki[0].tegund or spil[-1].tegund == bunki[0].tegund:
+                    sett = spil.pop(-1)
+                    bunki.insert(0, sett)
+                    print("Tölva dróg þrisvar")
+                    print("Tölva setti út", sett)
+                else:
+                    print("Tölva dróg þrisvar og gat ekki gert")
+
+
 
 
 tilvik = Spil(0, 0)
@@ -97,10 +119,6 @@ for x in range(5):  # Tekur úr stokk
     spilNotandi.append(spilastokkur.pop(0))
     spilTolva.append(spilastokkur.pop(0))
 
-# spilhendi(spilNotandi)  # Sýnir spil notanda
-
-# spiltolvu(spilTolva)  # Sýnir spil tölvu
-
 kastbunki.append(spilastokkur.pop(0))  # Tekur úr stokk
 
 # spilbord(kastbunki)  # Sýnir borð
@@ -108,7 +126,7 @@ kastbunki.append(spilastokkur.pop(0))  # Tekur úr stokk
 # ut = spilNotandi.pop(3)  # Tekur fjórða spil notanda 0 1 2 3
 # kastbunki.insert(0, ut)  # setur spilið á borð
 
-print("skrifa 'draga' til að draga")
+print("\nLeiðbeiningr:\nskrifa 'draga' til að draga")
 dragatel = 0
 on = True
 draga = True
@@ -121,7 +139,7 @@ while on:
     ut = input("Hvaða spil viltu setja út? ")
     if ut == "draga":
         for x in spilNotandi:
-            if kastbunki[-1].tegund == x.tegund or kastbunki[-1].nr == x.nr:
+            if kastbunki[0].tegund == x.tegund or kastbunki[0].nr == x.nr:
                 print("Þú mátt ekki draga")
                 draga = False
                 break
@@ -133,24 +151,42 @@ while on:
                 print("Þú mátt ekki draga meir gerðu pass")
             else:
                 spilNotandi.append(spilastokkur.pop(0))
+                print("\nÞú drógst", spilNotandi[-1])
     elif ut == "pass":
-        if dragatel != 4:
+        if dragatel < 3:
             print("Þú getur ekki gert pass")
-        if dragatel == 4:
-            print("þettaekkitilbúið")
+        if dragatel == 4 or dragatel == 3:
+            # print("\n")
+            dragatel = 0
+            tolvagerir(spilTolva, kastbunki, spilastokkur)
             # Tölva gerir
+
+    elif ut == "olsen":
+        pass
+    elif ut == "olsen olsen":
+        pass
+
     else:
         try:
             ut = int(ut)
-            if kastbunki[-1].tegund == spilNotandi[ut-1].tegund or kastbunki[-1].nr == spilNotandi[ut-1].nr:
+            if kastbunki[0].tegund == spilNotandi[ut-1].tegund or kastbunki[0].nr == spilNotandi[ut-1].nr:
+                print("\nÞú settir út", spilNotandi[ut - 1])
                 settUt = spilNotandi.pop(ut-1)
                 kastbunki.insert(0, settUt)
-                # Tölva gerir
-                tolvagerir(spilTolva, kastbunki, spilastokkur)
+                if len(spilNotandi) == 0:
+                    print("Til hamingju þú vannst, takk fyrir að spila")
+                    on = False
+                else:
+                    # Tölva gerir
+                    dragatel = 0
+                    tolvagerir(spilTolva, kastbunki, spilastokkur)
             else:
                 print("Þú getur ekki sett út þetta spil")
         except:
-            print("Þetta er ekki spil")
+            print("Þetta er ekki þekkt skipun")
 
+    if len(spilTolva) == 0:
+        print("Tölva vann, takk fyrir að spila")
+        on = False
 
 
