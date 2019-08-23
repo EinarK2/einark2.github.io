@@ -77,32 +77,32 @@ def tolvagerir(spil, bunki, stokkur):
         if x.nr == 8:  # Gáir hvort eih spil er 8
             randtegund = random.randint(1, 4)  # Tekur random tölu fyrir tegund
             if randtegund == 1:
+                print("Tölva setti út", x, "og breytti í Hjarta")
                 x.tegund = 1  # Breytir tegund í 1 (Hjarta)
                 sett = spil.pop(spil.index(x))  # tekur spil úr hendi
                 bunki.insert(0, sett)  # setur spil í bunka
                 gert = True  # Staðfestir að það var gert
-                print("Tölva setti út", sett, "og breytti í Hjarta")
                 break
             elif randtegund == 2:
+                print("Tölva setti út", x, "og breytti í Spaða")
                 x.tegund = 2
                 sett = spil.pop(spil.index(x))  # sama
                 bunki.insert(0, sett)
                 gert = True
-                print("Tölva setti út", sett, "og breytti í Spaða")
                 break
             elif randtegund == 3:
+                print("Tölva setti út", x, "og breytti í Tígul")
                 x.tegund = 3
                 sett = spil.pop(spil.index(x))  # sama
                 bunki.insert(0, sett)
                 gert = True
-                print("Tölva setti út", sett, "og breytti í Tígul")
                 break
             elif randtegund == 4:
+                print("Tölva setti út", x, "og breytti í Lauf")
                 x.tegund = 4
                 sett = spil.pop(spil.index(x))  # sama
                 bunki.insert(0, sett)
                 gert = True
-                print("Tölva setti út", sett, "og breytti í Lauf")
                 break
         elif x.tegund == bunki[0].tegund or x.nr == bunki[0].nr:
             sett = spil.pop(spil.index(x))
