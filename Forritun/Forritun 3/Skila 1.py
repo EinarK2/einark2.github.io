@@ -23,15 +23,6 @@ class Invoice:
 
 
 def readFile(filename):  # Les skrána með csv.reader og smíðar invoice object úr  hverri línu fyrir sig.
-    # try except finally
-    '''try:
-        skra = open(nafnTxtSkra, "r", encoding="utf-8")  # opnar skrá
-        listi = (skra.read().split(';'))  # Les innihald án bila????
-        skra.close()  # Lokar skrá
-        return listi  # Skilar lista
-    except:
-        print("Það er ekkert í skránni")
-    '''
     file = None
     try:
         file = open(filename, "r", newline='\r\n', encoding="utf-8")
@@ -42,13 +33,45 @@ def readFile(filename):  # Les skrána með csv.reader og smíðar invoice objec
     except IOError:
         print('An error occured trying to read the file')
     finally:
-        print('Finished')
+        print('(Skrá Lesin)')
         if file != None:
             file.close()
 
 
-def writeFile():  # Skrifar innihald listans invoiceList í skrána invoice.csv
-    pass  # try except finally
+def delInvoice():
+    print("Delete Invoice")
+    index = -1
+    partnumber = input("Partnumber to delete: ")
+    for invoice in invoices:
+        index = index + 1
+        if invoice.partNumber == partnumber:
+            del invoices[index]
+            break
+
+
+def updateInvoice():
+    print("Update Invoice")
+    partnumberToUpdate = input("Partnr: ")
+    newprice = input("PriceperItem")
+    for invoice in invoices:
+        if invoice.partNumber == partnumberToUpdate:
+            invoice.pricePerItem = newprice
+            break
+
+
+def writeFile(filename):  # Skrifar innihald listans invoiceList í skrána invoice.csv
+    file = None
+    try:
+        file = open(filename, "w", newline='\r\n', encoding="utf-8")
+        for invoice in invoices:
+            line = invoice.partNumber + ";" + invoice.partDescription + ";" + invoice.quantity + ";" + invoice.pricePerItem + "\n"
+            file.write(line)
+    except IOError:
+        print("An error has occured")
+    finally:
+        print("Finished")
+        if file != None:
+            file.close()
 
 
 def addInvoice():  # Bætir reikningi við listann
@@ -56,10 +79,20 @@ def addInvoice():  # Bætir reikningi við listann
 
 
 def printInvoices():  # Prentar(á skjáinn) alla reikninga ásamt heildarupphæð reiknings.
-    pass
+    for invoice in invoices:
+        invoice.printInvoice()
+    print("")
 
 
-print("Les Skrá")
+print("(Les Skrá)")
 readFile('invoice.csv')
-for invoice in invoices:
-    invoice.printInvoice()
+print("---Skrá Prentuð---\n")
+printInvoices()
+addInvoice()
+delInvoice()
+print("update")
+updateInvoice()
+
+print("---Skrá Prentuð---\n")
+printInvoices()
+writeFile('invoice.csv')
