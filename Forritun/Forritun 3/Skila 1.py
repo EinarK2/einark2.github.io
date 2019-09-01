@@ -18,7 +18,7 @@ class Invoice:
         return self.quantity * self.pricePerItem
 
     def printInvoice(self):
-        print('Partnumber: {}\nPart Description: {}\nQuantity: {}\nPrice Per Item: {}'
+        print('Partnumber: {}\nPart Description: {}\nQuantity: {}\nPrice Per Item: {} \n'
         .format(self.partNumber, self.partDescription, self.quantity, self.pricePerItem))
 
 
@@ -39,7 +39,7 @@ def readFile(filename):  # Les skrána með csv.reader og smíðar invoice objec
 
 
 def delInvoice():
-    print("Delete Invoice")
+    print("--- Delete Invoice ---")
     index = -1
     partnumber = input("Partnumber to delete: ")
     for invoice in invoices:
@@ -52,7 +52,7 @@ def delInvoice():
 def updateInvoice():
     print("Update Invoice")
     partnumberToUpdate = input("Partnr: ")
-    newprice = input("PriceperItem")
+    newprice = input("Price per Item: ")
     for invoice in invoices:
         if invoice.partNumber == partnumberToUpdate:
             invoice.pricePerItem = newprice
@@ -75,13 +75,17 @@ def writeFile(filename):  # Skrifar innihald listans invoiceList í skrána invo
 
 
 def addInvoice():  # Bætir reikningi við listann
-    pass
+    print("--- Add Invoice ---")
+    partnumber = input("Partnumber to add: ")
+    partdescription = input("Part Description to add: ")
+    quantity = input("Quantity to add: ")
+    priceperitem = input("Price per item to add: ")
+    invoices.append(Invoice(partnumber, partdescription, quantity, priceperitem))
 
 
 def printInvoices():  # Prentar(á skjáinn) alla reikninga ásamt heildarupphæð reiknings.
     for invoice in invoices:
         invoice.printInvoice()
-    print("")
 
 
 print("(Les Skrá)")
@@ -90,7 +94,6 @@ print("---Skrá Prentuð---\n")
 printInvoices()
 addInvoice()
 delInvoice()
-print("update")
 updateInvoice()
 
 print("---Skrá Prentuð---\n")
