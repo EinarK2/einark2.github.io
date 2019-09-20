@@ -11,27 +11,41 @@ class Nemi:
         self.gsm = gsm
         self.mail = mail
 
-    def prentainfo(self):
-        print("Kennitala: {}\nNafn: {}\nKyn: {}\nHeimilisfang: {}\nSímanúmer: {}\nNetfang: {}"
-        .format(self.kt, self.nafn, self.kyn, self.heimilisfang, self.gsm, self.mail))
+    def __str__(self):
+        return "Kennitala: {}\nNafn: {}\nKyn: {}\nHeimilisfang: {}\nSímanúmer: {}\nNetfang: {}"\
+            .format(self.kt, self.nafn, self.kyn, self.heimilisfang, self.gsm, self.mail)
 
 
-class Grunnskolanemi:
-    def __init__(self, forradamadur, nafnskola):
+class Grunnskolanemi(Nemi):
+    def __init__(self, kt, nafn, kyn, heimilisfang, gsm, mail, forradamadur, nafnskola):
+        super().__init__(kt, nafn, kyn, heimilisfang, gsm, mail)
         self.forradamadur = forradamadur
         self.nafnskola = nafnskola
 
+    def __str__(self):
+        return "{}\nForráðamaður: {}\nNafn Skóla: {}"\
+            .format(super().__str__(), self.forradamadur, self.nafnskola)
 
-class Framhaldsskolanemi:
-    def __init__(self, braut, busetustyrkur):
+
+class Framhaldsskolanemi(Nemi):
+    def __init__(self, kt, nafn, kyn, heimilisfang, gsm, mail, braut, busetustyrkur):
+        super().__init__(kt, nafn, kyn, heimilisfang, gsm, mail)
         self.braut = braut
         self.busetustyrkur = busetustyrkur
 
+    def __str__(self):
+        return "{}\nBraut: {}\nBúsetustyrkur: {}".format(super().__str__(), self.braut, self.busetustyrkur)
 
-class Haskolanemi:
-    def __init__(self, bsc, msc, phd, namslan):
-        self.BSc = bsc
+
+class Haskolanemi(Nemi):
+    def __init__(self, kt, nafn, kyn, heimilisfang, gsm, mail, grada, namslan):
+        super().__init__(kt, nafn, kyn, heimilisfang, gsm, mail)
+        self.grada = grada
+        '''self.BSc = bsc
         self.MSc = msc
-        self.PHd = phd
+        self.PHd = phd'''
         self.namslan = namslan
 
+    def __str__(self):
+        return "{}\nGráða: {}\nNámslán: {}"\
+            .format(super().__str__(), self.grada, self.namslan)
