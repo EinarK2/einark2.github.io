@@ -1,9 +1,9 @@
 # Einar Karl Pétursson
 # 27/9/2019
 
-from timaverkefni1 import Account
-from timaverkefni1 import SavingsAccount
-from timaverkefni1 import CheckingAccount
+from timaverkefni1klasar_einar import Account
+from timaverkefni1klasar_einar import SavingsAccount
+from timaverkefni1klasar_einar import CheckingAccount
 
 
 account1 = SavingsAccount(100000, 15)
